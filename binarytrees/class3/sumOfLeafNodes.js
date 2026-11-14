@@ -118,5 +118,6 @@ function findPath(root,target,arr){
  }
 
 }
+return false;
 
 }
