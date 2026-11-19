@@ -6,7 +6,7 @@ for(let i=0;i<str.length;i++){
         top++;
     
 }
-ans=""
+ans="";
 while(top!=-1){
    ans=ans+arr.pop();
    top--;

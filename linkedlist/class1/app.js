@@ -6,7 +6,7 @@ class Node{
 }
 let arr=[1,5,6,3,4,7,8,14];
 let head=convertToLL(arr)
-//console.log(head.data);
+console.log(head.data);
 function convertToLL(arr){
     let head=new Node(arr[0]);
     let temp=head;

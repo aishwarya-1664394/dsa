@@ -34,10 +34,11 @@ levelOrder(root);
 function levelOrder(root1){
     let queue=[root1];
     let ans=[];
+    let level=[]
     while(queue.length!=0){
         let size=queue.length;
        
-        let level=[]
+         level=[]
         for(let i=0;i<size;i++){
              let curr=queue.shift();
             if(curr.left!=null){
@@ -53,7 +54,8 @@ function levelOrder(root1){
         }
         ans.push(level)
     }
-    console.log(ans)
+    console.log(ans);
+     console.log(level)
 }
 function addRow(root,depth,val){
     if(depth==1){

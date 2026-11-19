@@ -124,9 +124,7 @@ function levelOrder(root1){
     console.log(ans)
 }
 function binaryTreePruning(root){
-    if(root==null){
-        return null
-    }
+    
     if(root.left==null && root.right==null){
         if(root.data==0){
             return null
@@ -135,11 +133,13 @@ function binaryTreePruning(root){
             return root;
         }
     }
+    if(root.left!=null){
     root.left=binaryTreePruning(root.left);
-    root.right=binaryTreePruning(root.right);
-    if(root.left==null && root.right==null && root.data==0){
-        return null
     }
+    if(root.right!=null){
+    root.right=binaryTreePruning(root.right);
+    }
+    
     return root
 
 }
